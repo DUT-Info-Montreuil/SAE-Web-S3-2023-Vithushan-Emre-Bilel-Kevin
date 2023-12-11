@@ -17,5 +17,11 @@
         <a href="">Clan</a>
         <a href="">guide</a>
     </nav>
+    <main>
+
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
