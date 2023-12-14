@@ -1,7 +1,5 @@
 <?php
 
-require_once "composants/menu/vue_menu.php";
-
 
 class ControleurCompMenu {
 
