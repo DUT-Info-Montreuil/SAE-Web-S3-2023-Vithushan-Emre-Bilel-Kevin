@@ -1,36 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceTowerDefesne</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="">
-                <img src="image/home.png" alt="logo-home" width="35">
-            </a>
-            <a href="">
-                <img src="image/user.png" alt="logo-png" width="35">
-            </a>
 
-        </div>
-        <h1>Space Tower Defense</h1>
-    </header>
-    <nav>
-        <a href="">Classement</a>
-        <a href="">Support</a>
-        <a class="test" href="">Jouer</a>
-        <a href="">Clan</a>
-        <a href="">guide</a>
-    </nav>
-    <main>
+<?php
+session_start();
 
-    </main>
-    <footer>
-        
-    </footer>
-</body>
-</html>
+require_once "connexion.php";
+require_once "site.php";
+require_once "module_generique.php";
+require_once "composant_generique.php";
+require_once "vue_composant_generique.php";
+
+require_once "composants/footer/composant_footer.php";
+require_once "composants/header/composant_header.php";
+
+Connexion::init_connexion();
+$site = new Site();
+$site->exec_module();
+
+$nav = new ComposantNav();
+$footer = new ComposantFooter();
+
+
+$module_html = $site->get_module()->get_affichage();
+include_once "template.php";
+
