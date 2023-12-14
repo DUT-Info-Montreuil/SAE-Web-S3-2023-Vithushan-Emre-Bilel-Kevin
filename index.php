@@ -1,10 +1,10 @@
 
 <?php
-session_start();
 
 require_once "connexion.php";
 require_once "site.php";
 require_once "module_generique.php";
+require_once "vue_generique.php";
 require_once "composant_generique.php";
 require_once "vue_composant_generique.php";
 
@@ -15,7 +15,8 @@ Connexion::init_connexion();
 $site = new Site();
 $site->exec_module();
 
-$nav = new ComposantNav();
+$header = new ComposantHeader();
+//$nav = new ComposantNav();
 $footer = new ComposantFooter();
 
 

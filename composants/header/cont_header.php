@@ -1,17 +1,17 @@
 <?php
 
-require_once "composants/menu/vue_menu.php";
+require_once "vue_header.php";
 
 
-class ControleurCompMenu {
+class ControleurCompHeader {
 
 	public function __construct() {
-		$this->vue = new VueCompMenu();
+		$this->vue = new VueCompHeader();
 	}
 
 
 	public function exec () {
-		$this->vue->vue_menu();
+		$this->vue->vue_header();
 	}	
 
 

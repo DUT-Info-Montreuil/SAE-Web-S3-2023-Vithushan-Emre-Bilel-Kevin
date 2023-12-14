@@ -1,10 +1,10 @@
 <?php
-require_once "composants/menu/cont_menu.php";
+require_once "cont_header.php";
 
-class ComposantMenu extends ComposantGenerique {
+class ComposantHeader extends ComposantGenerique {
 	public function __construct () {
 		parent::__construct();
-		$this->controleur = new ControleurCompMenu();
+		$this->controleur = new ControleurCompHeader();
 	}
 	
 

@@ -1,9 +1,8 @@
 <?php
-class VueCompMenu extends VueCompGenerique {
+class VueCompHeader extends VueCompGenerique {
     
     public function __construct() {
 		$this->affichage .= '
-        <header>
             <div class="logo">
                 <a href="">
                     <img src="image/home.png" alt="logo-home" width="35">
@@ -13,7 +12,6 @@ class VueCompMenu extends VueCompGenerique {
                 </a>
             </div>
             <h1>Space Tower Defense</h1>
-        </header>
         <div class="logo">
             <a href="">
                 <img src="image/home.png" alt="logo-home" width="35">
