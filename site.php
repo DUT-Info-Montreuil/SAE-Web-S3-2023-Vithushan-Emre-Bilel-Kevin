@@ -7,10 +7,10 @@ class Site {
 	
 	
 	public function __construct() {
-		$this->module_name = isset($_GET['module']) ? $_GET['module'] : "accueil";
+		$this->module_name = isset($_GET['module']) ? $_GET['module'] : "joueurs";
 
 		switch ($this->module_name) {
-			case "accueil" :
+			case "joueurs" :
 			case "clan" :
 			case "guide" :
             case "support" :
