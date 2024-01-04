@@ -10,7 +10,7 @@ class ComposantGenerique {
 
 	public function getAffichage() {
 
-		return $this->controleur->vue->getAffichage();
+		return $this->controleur->getVue()->getAffichage();
 
 	}
 	
