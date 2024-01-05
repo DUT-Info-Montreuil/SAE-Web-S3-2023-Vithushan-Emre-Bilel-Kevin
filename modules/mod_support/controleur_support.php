@@ -13,12 +13,16 @@ class ControleurSupport {
 	}
 	
 	public function exec() {
-		$this->action = isset($_GET["action"]) ? $_GET["action"] : "faq";
+		$this->action = isset($_GET["action"]) ? $_GET["action"] : "init";
 		
 		switch ($this->action) {
+			case "init" :
+				$this->faq();
+				$this->contacter();
+				break;
 			case "faq" :
 				$this->faq();
-				break;
+				break;	
 			default : 
 				die ("Action inexistante");
 			
@@ -31,6 +35,13 @@ class ControleurSupport {
         $liste = $this->modele->get_faq();
 		$this->vue->listfaq($liste);
 	}
+
+
+
+	private function contacter () {
+		$this->vue->contact();
+	}
+	
 	
 	
 	
