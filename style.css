@@ -52,3 +52,17 @@ nav, a {
     padding: 2% 10%;
     margin: -2% -10%;
 }
+
+footer{
+    height: 150px;
+    background-color: black;
+}
+.reseau{
+    padding-top: 20px;
+    height: 40px;
+    display: flex;
+    background-color: #1b1a1a;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

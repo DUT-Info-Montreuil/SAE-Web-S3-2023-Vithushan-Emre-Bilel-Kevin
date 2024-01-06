@@ -13,7 +13,10 @@ class Site {
 			case "joueurs" :
 			case "clan" :
 			case "guide" :
+			case "acceuil" :
+			case "connexion" :
             case "support" :
+			case "profil" :
 				require_once "modules/mod_".$this->module_name."/module_".$this->module_name.".php";
 				break;
 			default :
