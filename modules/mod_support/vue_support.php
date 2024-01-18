@@ -27,17 +27,8 @@ class VueSupport extends VueGenerique{
 	
     public function contact () {
 		?>
-		<style>
-			.row {
-    			display: flex;
-  			}
-  			.col {
-				text-align: center;
-				flex: 1; 
-				padding: 1em;
-				border: solid;
-  			}
-		</style>
+
+	<link rel="stylesheet" href=".//style.css">
         <h1> Contactez-Nous</h1>
 		<p>Disponibles de 9h a 18h du lundi au vendredi</p>	
 		<div class="row">

@@ -7,6 +7,7 @@ class VueCompFooter extends VueCompGenerique {
 
     public function __construct() {
 		$this->affichage .= '
+        <link rel="stylesheet" href=".//style.css">
         <div class="reseau">
         <p>SUIVEZ NOUS</p>
         <a href=""><img src="images/images_footer/facebook.png" alt="facebook" width="35"></a>

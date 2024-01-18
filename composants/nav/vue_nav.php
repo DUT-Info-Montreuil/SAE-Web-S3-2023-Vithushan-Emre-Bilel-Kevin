@@ -3,6 +3,7 @@ class VueCompNav extends VueCompGenerique {
     
     public function __construct() {
 		$this->affichage .= '
+    <link rel="stylesheet" href=".//style.css">
         <a href="">Classement</a>
         <a href="">Support</a>
         <a class="test" href="">Jouer</a>

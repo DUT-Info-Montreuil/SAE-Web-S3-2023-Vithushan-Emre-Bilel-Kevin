@@ -3,9 +3,9 @@ class VueCompHeader extends VueCompGenerique {
     
     public function __construct() {
 		$this->affichage .= '
-         
+        <link rel="stylesheet" href=".//style.css">
             <div class="logo">
-                <a href="">
+                <a href="index.php?module=accueil">
                     <img src="images/images_header/home.png" alt="logo-home" width="35">
                 </a>
                 <a href="">

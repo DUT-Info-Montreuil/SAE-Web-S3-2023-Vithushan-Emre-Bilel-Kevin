@@ -29,6 +29,8 @@ class ControleurConnexion {
             case 'connexion':
                 $this->connect();
                 break;
+                default :
+				die ("Module inexistant");
         }
     }
 
