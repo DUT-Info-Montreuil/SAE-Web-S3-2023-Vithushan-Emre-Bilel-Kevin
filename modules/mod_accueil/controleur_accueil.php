@@ -30,7 +30,7 @@ class ControleurAccueil {
     }
 
     public function afficherAccueil() {
-        $this->$vue->accueil();
+        $this->vue->accueil();
     }
 
 

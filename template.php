@@ -10,7 +10,6 @@
 <header><?php echo $header->getAffichage(); ?></header>
 <nav><?php echo $nav->getAffichage(); ?></nav>
 <main>
-   
 <?=$module_html?>
 </main>
 
