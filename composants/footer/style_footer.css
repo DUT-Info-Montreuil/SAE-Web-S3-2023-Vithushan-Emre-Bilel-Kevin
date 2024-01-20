@@ -1,0 +1,15 @@
+.reseau{
+    padding-top: 20px;
+    height: 40px;
+    display: flex;
+    background-color: #1b1a1a;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.droitEtPrevention{
+    padding-left: 15px;
+    display: flex;
+    color: white;
+}

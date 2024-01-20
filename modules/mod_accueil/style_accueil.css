@@ -1,0 +1,97 @@
+
+
+
+
+
+
+
+.avis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-image: url(images/images_accueil/cadreor.png);
+
+    text-align: center;
+}
+
+
+
+
+
+.imageJeu{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 55px ;
+}
+
+
+
+
+
+.videoJeu{
+    text-align: center;
+}
+
+.presentationJeu{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: red;
+    justify-content: center;
+}
+
+.descriptionJeu{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.histoire{
+   
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:430px){
+    
+    .imageJeu{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .imageJeu1Size{
+        width: 412px;
+        height: 250px;
+    }
+
+    .imageJeu2Size{
+        width: 412px;
+        height: 250px;
+    }
+
+    .videoJeuSize{
+        width: 412px;
+        height: 300px;
+    }
+
+    .descriptionJeu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imageDescriptionJeuSize{
+        width: 412px;
+        height: 250px;
+    }
+}

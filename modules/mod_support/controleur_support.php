@@ -32,8 +32,16 @@ class ControleurSupport {
 
 
     private function faq () {
-        $liste = $this->modele->get_faq();
-		$this->vue->listfaq($liste);
+		$this->vue->afficheFaq();
+
+        $tab_faq = $this->modele->get_faq();
+			foreach ($tab_faq as $faq) {
+				$idQuestionReponse = isset($faq["idQuestionReponse"]) ? $faq["idQuestionReponse"] : "";
+				$reponse = isset($faq["reponse"]) ? $faq["reponse"] : "";
+				$question = isset($faq["question"]) ? $faq["question"] : "";
+				$this->vue->afficheListeFaq($question,$reponse);
+			}
+		
 	}
 
 

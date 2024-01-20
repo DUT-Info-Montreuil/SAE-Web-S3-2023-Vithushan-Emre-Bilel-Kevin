@@ -1,7 +1,7 @@
 <?php
 
-require_once 'modules/mod_support/modele_connexion.php';
-require_once 'modules/mod_support/vue_connexion.php';
+require_once 'modules/mod_connexion/modele_connexion.php';
+require_once 'modules/mod_connexion/vue_connexion.php';
 
 
 class ControleurConnexion {
@@ -20,27 +20,42 @@ class ControleurConnexion {
     }
 
     public function exec() {
-        $this->action = isset($_GET['action']) ? $_GET['action'] : 'null';
+        $this->action = isset($_GET['action']) ? $_GET['action'] : 'form_ajout';
 
         switch($this->action) {
-            case 'ajout':
+            case 'form_ajout':
+                $this->formulaire_ajout();
+                break;
+            case 'form_inscription':
+                $this->formulaire_inscription();
+                break;
+            case 'inscription':
                 $this->ajout();
-                break;
+                break; 
             case 'connexion':
-                $this->connect();
-                break;
+                $this->connexion();
+                break;       
                 default :
-				die ("Module inexistant");
+				die ("Module inexistant mod connexion");
         }
     }
 
     public function ajout() {
-        $log = isset($_POST['nom']) ? $_POST['nom'] : null;
-        $mot_de_passe = isset($_POST['mdp']) ? $_POST['mdp'] : null;
-         
-        $this->modele->ajouterUtilisateur($log,$mot_de_passe);
-         
+        $this->modele->ajouterUtilisateur();
         echo 'Vous vous étes inscrit avec succés !<br>';
+    }
+
+    public function connexion() {
+        $this->modele->connexion_utilisateur();
+        
+    }
+
+    public function formulaire_ajout() {
+        $this->vue->afficherFormConnexion(); 
+    }
+
+    public function formulaire_inscription() {
+        $this->vue->afficherFormInscription(); 
     }
 
 

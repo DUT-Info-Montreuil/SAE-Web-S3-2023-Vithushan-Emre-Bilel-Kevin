@@ -6,8 +6,10 @@ function toggleText(textId) {
         text.style.display = "block";
     } else {
         text.style.display = "none";
-    }
+    } 
 }
+
+
 
 function toggleLiens() {
     event.preventDefault();

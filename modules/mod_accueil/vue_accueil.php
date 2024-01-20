@@ -9,10 +9,10 @@ class VueAccueil extends VueGenerique{
 
     public function accueil(){
         ?>
-        <link rel="stylesheet" href=".//style.css">
+        <link rel="stylesheet" href="modules/mod_accueil/style_accueil.css">
              <div class="imageJeu">
-            <img class="imageJeu1Size" src="./image/imageJeu1.jpg" width="700" height="400"  alt="grec">
-            <img class="imageJeu2Size" src="./image/imageJeu2.jpeg" width="700" height="400"  alt="icardi">
+            <img class="imageJeu1Size" src="images/images_accueil/imageJeu1.jpg" width="700" height="400"  alt="grec">
+            <img class="imageJeu2Size" src="images/images_accueil/imageJeu2.jpeg" width="700" height="400"  alt="icardi">
         </div>
        
 

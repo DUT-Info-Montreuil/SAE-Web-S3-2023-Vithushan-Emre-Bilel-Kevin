@@ -6,29 +6,29 @@ class VueSupport extends VueGenerique{
 
 	}
 
-	
-
-
-    public function listfaq ($tab_faq) {
+	public function afficheFaq(){
 		?>
-        <h1>FAQ</h1>
-        <ul>
-        <?php
-		  foreach ($tab_faq as $faq) {
-			// Vérifie si les clés "idQuestionReponse" et "reponse" existent avant de les utiliser
-			$idQuestionReponse = isset($faq["idQuestionReponse"]) ? $faq["idQuestionReponse"] : "";
-			$reponse = isset($faq["reponse"]) ? $faq["reponse"] : "";
-			$question = isset($faq["question"]) ? $faq["question"] : "";
-			?><li><a href="index.php?module=support&action=faq&id=<?=$idQuestionReponse?>"><?=$question?><br><?=$reponse?></a></li><?php
-		}
-		?></ul><?php
+		<h1>FAQ</h1>
+		<?php
 	}
 
+	public function afficheListeFaq ($q,$r) {
+		?>
+		<link rel="stylesheet" href="modules/mod_support/style_support.css">
+		
+		<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+			<div class ="QuestionReponse">
+				<h2><li><?=$q?></h2>
+				<p><?=$r?></p>
+			</div>
+		</div>
+        <?php
+	}
+	
 	
     public function contact () {
 		?>
-
-	<link rel="stylesheet" href=".//style.css">
+		<link rel="stylesheet" href="modules/mod_support/style_support.css">
         <h1> Contactez-Nous</h1>
 		<p>Disponibles de 9h a 18h du lundi au vendredi</p>	
 		<div class="row">
@@ -47,7 +47,6 @@ class VueSupport extends VueGenerique{
 				A adresse@mail.com .
 			</div>
     	</div>
-        <ul>
 		<?php
 	}
 	

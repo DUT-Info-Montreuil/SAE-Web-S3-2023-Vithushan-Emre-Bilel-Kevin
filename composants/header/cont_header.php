@@ -1,5 +1,7 @@
 <?php
 
+
+
 require_once "composants/header/vue_header.php";
 
 
@@ -17,8 +19,18 @@ class ControleurCompHeader {
 	}	
 
 
+	public function c() {
+       $this->vue->profil();
+    }
+
+
+
+
+
 	public function getVue() {
         return $this->vue;
     }
+
+
 
 }
