@@ -1,7 +1,9 @@
 function toggleLiens() {
-    event.preventDefault();
+   event.preventDefault();
     // Récupérer l'élément div
+   
     var divLiens = document.getElementById('liensContainer');
+   // alert(divLiens);
 
     // Basculer la visibilité des liens
     if (divLiens.style.display === 'flex') {

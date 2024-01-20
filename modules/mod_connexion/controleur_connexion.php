@@ -20,11 +20,11 @@ class ControleurConnexion {
     }
 
     public function exec() {
-        $this->action = isset($_GET['action']) ? $_GET['action'] : 'form_ajout';
+        $this->action = isset($_GET['action']) ? $_GET['action'] : 'form_connexion';
 
         switch($this->action) {
-            case 'form_ajout':
-                $this->formulaire_ajout();
+            case 'form_connexion':
+                $this->formulaire_connexion();
                 break;
             case 'form_inscription':
                 $this->formulaire_inscription();
@@ -34,9 +34,12 @@ class ControleurConnexion {
                 break; 
             case 'connexion':
                 $this->connexion();
-                break;       
-                default :
-				die ("Module inexistant mod connexion");
+                break;
+            case 'deconnexion':
+                $this->deconnexion();
+                break;           
+            default :
+			die ("Module inexistant mod connexion");
         }
     }
 
@@ -50,12 +53,16 @@ class ControleurConnexion {
         
     }
 
-    public function formulaire_ajout() {
+    public function formulaire_connexion() {
         $this->vue->afficherFormConnexion(); 
     }
 
     public function formulaire_inscription() {
         $this->vue->afficherFormInscription(); 
+    }
+
+    public function deconnexion(){
+        $this->modele->deconnexion();
     }
 
 
