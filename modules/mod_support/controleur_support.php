@@ -12,16 +12,19 @@ class ControleurSupport {
 	}
 	
 	public function exec() {
-		$this->action = isset($_GET["action"]) ? $_GET["action"] : "init";
+		$this->action = isset($_GET["action"]) ? $_GET["action"] : "barreDeRecherche";
 		
 		switch ($this->action) {
-			case "init" :
+			case "barreDeRecherche":
+				$this->barreDeRecherche();
 				$this->test(); 
 				$this->contacter();
 				break;
-			case "faq" :
-				$this->test();
-				break;	
+			case "rechercherQuestion":
+				$this->barreDeRecherche();
+				$this->rechercherQuestion();
+				$this->contacter();
+				break;
 			default : 
 				die ("Action inexistante");
 			
@@ -32,6 +35,15 @@ class ControleurSupport {
 		$this->vue->afficheTitreFaq();
         $tab_faq = $this->modele->get_faq();
 		$this->vue->afficheTouteLesQuestionReponseDansUnElementABarreDeDefilement($tab_faq);
+	}
+
+	private function barreDeRecherche(){
+		$this->vue->barreDeRecherche();
+	}
+
+	private function rechercherQuestion(){
+		$this->vue->afficherQuestionTrouver($this->modele->rechercherQuestion());
+		//$this->modele->rechercherQuestion();
 	}
 
 

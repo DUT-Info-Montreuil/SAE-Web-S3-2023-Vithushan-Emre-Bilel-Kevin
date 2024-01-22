@@ -38,6 +38,25 @@ class VueSupport extends VueGenerique{
 			</div>
         <?php
 	}
+
+	public function barreDeRecherche(){
+		echo '<form method="post" action="index.php?module=support&&action=rechercherQuestion">';
+        echo '<input type="search"  name="recherche" placeholder="rechercher une question">';
+        echo '<input type="submit" name="envoyer">';
+        echo '</form>';
+	}
+
+	public function afficherQuestionTrouver($tab) {
+        if (!empty($tab)) {
+			$this->afficheTitreFaq();
+            $this->afficheTouteLesQuestionReponseDansUnElementABarreDeDefilement($tab);
+        }
+        else {
+            ?>
+                <p>Aucune question trouvé</p>
+            <?php
+        }
+    }
 	
 	
     public function contact () {
