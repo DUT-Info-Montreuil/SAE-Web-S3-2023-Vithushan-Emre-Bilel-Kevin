@@ -20,14 +20,14 @@ class ContClan {
                 $this->afficherBarreDeRecherche();
             break;        
             case 'rechercherClan':
+                $this->afficherBarreDeRecherche();
                 $this->rechercherClan();
             break;  
         }
     }
 
-
     public function rechercherClan(){
-        $this->modele->rechercherClan();        
+        $this->vue->afficheClanTrouver($this->modele->rechercherClan());;        
     }
 
     public function afficherBarreDeRecherche(){

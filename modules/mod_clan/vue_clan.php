@@ -9,6 +9,21 @@ class VueClan extends VueGenerique{
         echo '</form>';
     }
 
+    public function afficheClanTrouver($tab) {
+        if (!empty($tab)) {
+            foreach ($tab as $a) {
+                ?>
+                <p><?= $a['nom']?></p>
+                <?php 
+            }
+        }
+        else {
+            ?>
+                <p>Aucun Clan trouvé</p>
+            <?php
+        }
+    }
+
     public function getVue(){
         return $this;
     }
