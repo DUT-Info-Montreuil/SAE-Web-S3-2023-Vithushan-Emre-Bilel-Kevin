@@ -8,7 +8,7 @@ class VueCompNav extends VueCompGenerique {
           <a href="">Classement</a>
           <a href="index.php?module=support">Support</a>
           <a class="bjouer" href="">Jouer</a>
-          <a href="clan.php">Clan</a>
+          <a href="index.php?module=clan">Clan</a>
           <a href="">guide</a>
         
     ';
