@@ -1,0 +1,12 @@
+.titre_support {
+   margin-top: 100px;
+   text-align: center;
+}
+
+.element_defilement {
+   height: 500px;
+   width: 50%;
+   overflow: scroll;
+   border: 1px solid #ccc;
+   margin-left: 25%;
+}

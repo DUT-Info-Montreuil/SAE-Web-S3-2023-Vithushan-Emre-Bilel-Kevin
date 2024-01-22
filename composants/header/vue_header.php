@@ -14,6 +14,7 @@ class VueCompHeader extends VueCompGenerique {
             <img src="images/images_header/user.png" alt="Connexion" onclick="toggleLiens()" width="35">
           </a>
         </div>
+        <h1 class="titre_header">Space Tower Defense</h1>
         <div class="lienContainer" style="display:none;">
           <a class="lien1" href="index.php?module=mod1">Connection</a>
           <a class="lien2" href="index.php?module=mod2">Inscription</a>
