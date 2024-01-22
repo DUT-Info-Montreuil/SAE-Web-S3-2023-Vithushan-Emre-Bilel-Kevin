@@ -3,32 +3,45 @@
 class VueSupport extends VueGenerique{
 	public function __construct () {
 		parent::__construct();
-
-	}
-
-	public function afficheFaq(){
 		?>
-		<h1>FAQ</h1>
+		<link rel="stylesheet" href="modules/mod_support/style_support.css">
 		<?php
 	}
 
-	public function afficheListeFaq ($q,$r) {
+	public function afficheTitreFaq(){
 		?>
-		<link rel="stylesheet" href="modules/mod_support/style_support.css">
-		
-		<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+		<h1 class="titre_support">FAQ</h1>
+		<?php
+	}
+
+	public function afficheUneQuestionReponse ($q,$r) {
+		?>
 			<div class ="QuestionReponse">
 				<h2><li><?=$q?></h2>
 				<p><?=$r?></p>
 			</div>
-		</div>
+        <?php
+	}
+
+	public function afficheTouteLesQuestionReponse ($tab_faq) {
+		foreach ($tab_faq as $faq) {
+			$reponse = isset($faq["reponse"]) ? $faq["reponse"] : "";
+			$question = isset($faq["question"]) ? $faq["question"] : "";
+			$this->afficheUneQuestionReponse($question,$reponse);
+		}
+	}
+	
+	public function afficheTouteLesQuestionReponseDansUnElementABarreDeDefilement ($tab_faq) {
+		?>
+			<div class="element_defilement">
+				<?php $this->afficheTouteLesQuestionReponse($tab_faq)?>
+			</div>
         <?php
 	}
 	
 	
     public function contact () {
 		?>
-		<link rel="stylesheet" href="modules/mod_support/style_support.css">
         <h1> Contactez-Nous</h1>
 		<p>Disponibles de 9h a 18h du lundi au vendredi</p>	
 		<div class="row">

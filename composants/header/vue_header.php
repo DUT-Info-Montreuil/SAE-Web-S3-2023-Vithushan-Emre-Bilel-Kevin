@@ -15,6 +15,7 @@ class VueCompHeader extends VueCompGenerique {
             <img src="images/images_header/user.png" alt="Connexion" width="35"  onclick="toggleLiens()">
           </a>
         </div>
+        <h1 class="titre_header">Space Tower Defense</h1>
         <div id="liensContainer" style="display: none;">';
         
         if(isset($_SESSION['Utilisateur'])){

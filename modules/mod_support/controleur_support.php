@@ -1,7 +1,6 @@
 <?php
 require_once "modules/mod_support/modele_support.php";
 require_once "modules/mod_support/vue_support.php";
-
 class ControleurSupport {
 	private $modele;
 	private $vue;
@@ -17,11 +16,11 @@ class ControleurSupport {
 		
 		switch ($this->action) {
 			case "init" :
-				$this->faq();
+				$this->test(); 
 				$this->contacter();
 				break;
 			case "faq" :
-				$this->faq();
+				$this->test();
 				break;	
 			default : 
 				die ("Action inexistante");
@@ -29,19 +28,10 @@ class ControleurSupport {
 		}
 	}
 	
-
-
-    private function faq () {
-		$this->vue->afficheFaq();
-
+	private function test () {
+		$this->vue->afficheTitreFaq();
         $tab_faq = $this->modele->get_faq();
-			foreach ($tab_faq as $faq) {
-				$idQuestionReponse = isset($faq["idQuestionReponse"]) ? $faq["idQuestionReponse"] : "";
-				$reponse = isset($faq["reponse"]) ? $faq["reponse"] : "";
-				$question = isset($faq["question"]) ? $faq["question"] : "";
-				$this->vue->afficheListeFaq($question,$reponse);
-			}
-		
+		$this->vue->afficheTouteLesQuestionReponseDansUnElementABarreDeDefilement($tab_faq);
 	}
 
 
@@ -49,9 +39,7 @@ class ControleurSupport {
 	private function contacter () {
 		$this->vue->contact();
 	}
-	
-	
-	
-	
+		
 
 }
+?>
