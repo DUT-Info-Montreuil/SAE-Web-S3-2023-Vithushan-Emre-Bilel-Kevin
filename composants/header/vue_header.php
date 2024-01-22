@@ -12,12 +12,20 @@ class VueCompHeader extends VueCompGenerique {
             <img src="images/images_header/home.png" alt="logo-home" width="35">
           </a>
           <a href="">
-            <img src="images/images_header/user.png" alt="Connexion" onclick="toggleLiens()" width="35">
+            <img src="images/images_header/user.png" alt="Connexion" width="35"  onclick="toggleLiens()">
           </a>
         </div>
-        <div class="lienContainer" style="display:none;">
-          <a class="lien1" href="index.php?module=mod1">Connection</a>
-          <a class="lien2" href="index.php?module=mod2">Inscription</a>
+        <div id="liensContainer" style="display: none;">';
+        
+        if(isset($_SESSION['Utilisateur'])){
+          $this->affichage .= '<a class="lien1" href="index.php?module=connexion&&action=deconnexion">Deconnexion</a>';                     
+        }else {
+          $this->affichage .='<a class="lien1" href="index.php?module=connexion&&action=form_connexion">Connection</a>';
+          $this->affichage .='<a class="lien2" href="index.php?module=connexion&&action=form_inscription">Inscription</a>';
+        }    
+          
+
+          $this->affichage .= '  
         </div>
    
     ';

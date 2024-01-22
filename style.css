@@ -1,7 +1,7 @@
 
 body {
     height: 100vh;
-    background-image: url(images/images_accueil/cielstar.png);
+   
     background-size: cover;
 }
 
@@ -10,6 +10,9 @@ header {
     background-size: cover;
     background-position: end;
     background-repeat: no-repeat;
+    height: 45%;
+    width: 95%;
+    
     
 }
 
@@ -24,8 +27,6 @@ nav {
     height: 5%;
     margin-left: 2.3%;  
 }
-
-
 
 
 

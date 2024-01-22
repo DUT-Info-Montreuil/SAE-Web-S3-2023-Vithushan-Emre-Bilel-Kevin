@@ -18,7 +18,7 @@ h1 {
 
 
 #liensContainer {
-    display: none;
+    /*display: none;*/
     flex-direction: column;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;

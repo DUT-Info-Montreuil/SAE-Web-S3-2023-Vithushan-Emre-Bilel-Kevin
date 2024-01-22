@@ -1,20 +1,9 @@
-
-
-function toggleText(textId) {
-    var text = document.getElementById(textId);
-    if (text.style.display === "none") {
-        text.style.display = "block";
-    } else {
-        text.style.display = "none";
-    } 
-}
-
-
-
 function toggleLiens() {
-    event.preventDefault();
+   event.preventDefault();
     // Récupérer l'élément div
+   
     var divLiens = document.getElementById('liensContainer');
+   // alert(divLiens);
 
     // Basculer la visibilité des liens
     if (divLiens.style.display === 'flex') {
