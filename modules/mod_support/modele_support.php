@@ -11,12 +11,13 @@ class ModeleSupport extends Connexion{
 	public function rechercherQuestion(){
 		if(isset($_POST['recherche']) and !empty($_POST['recherche'])){
             $questionChercher = htmlspecialchars($_POST['recherche']);
-            $nomQuestion = self::$bdd->query('SELECT question, reponse FROM questionreponse WHERE question LIKE "'.$questionChercher.'%" ');
+            $nomQuestion = self::$bdd->prepare('SELECT question, reponse FROM questionreponse WHERE question LIKE :question ');
+			$nomQuestion->execute(['question' => $questionChercher.'%']);
+			$resultat = $nomQuestion->fetchAll(PDO::FETCH_ASSOC);
 
-            return $nomQuestion->fetchAll(); 
+            return $resultat; 
          } 
 	}
-	
 	
 	
 	
