@@ -1,0 +1,29 @@
+.divBootGenerale {
+    margin-bottom : 50px;
+}
+
+
+.divDesc {
+    background-color: red;
+    height: 205px;
+}
+
+.dispflex {
+    display: flex;
+    background-color: blue;
+}
+
+.div2 {
+    background-color: aqua;
+    display: inline;
+    height: 205px;
+    width: 500px;
+
+}
+
+.div3 {
+
+    background-color: yellow;
+    display: inline;
+    height: 205px;
+}

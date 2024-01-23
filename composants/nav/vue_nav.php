@@ -9,7 +9,7 @@ class VueCompNav extends VueCompGenerique {
           <a href="index.php?module=support">Support</a>
           <a class="bjouer" href="">Jouer</a>
           <a href="index.php?module=clan">Clan</a>
-          <a href="">guide</a>
+          <a href="index.php?module=guide">Guide</a>
         
     ';
 	}
