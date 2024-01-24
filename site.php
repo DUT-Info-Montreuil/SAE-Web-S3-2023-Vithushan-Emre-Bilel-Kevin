@@ -10,7 +10,7 @@ class Site {
 		$this->module_name = isset($_GET['module']) ? $_GET['module'] : "accueil";
 
 		switch ($this->module_name) {
-			case "joueurs" :
+			case "classement" :
 			case "clan" :
 			case "guide" :
 			case "accueil" :
