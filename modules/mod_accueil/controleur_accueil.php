@@ -3,7 +3,6 @@
 require_once 'modules/mod_accueil/modele_accueil.php';
 require_once 'modules/mod_accueil/vue_accueil.php';
 
-
 class ControleurAccueil {
     private $modele;
     private $vue;
@@ -14,9 +13,6 @@ class ControleurAccueil {
         $this->vue = new VueAccueil();
     }
     
-
-   
-
     public function exec() {
         $this->action = isset($_GET['action']) ? $_GET['action'] : 'accueil';
 
@@ -32,10 +28,6 @@ class ControleurAccueil {
     public function afficherAccueil() {
         $this->vue->accueil();
     }
-
-
-    
+  
 }
-
-
 ?>

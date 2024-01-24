@@ -1,15 +1,23 @@
 .reseau{
-    padding-top: 20px;
-    height: 40px;
     display: flex;
-    background-color: #1b1a1a;
+    background-color: #080808;
     align-items: center;
     justify-content: center;
-    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
-.droitEtPrevention{
-    padding-left: 15px;
+.LesPegi{
+    align-items: center;
+    justify-content: center;
     display: flex;
-    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(26, 26, 26);
+}
+
+.uu{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
