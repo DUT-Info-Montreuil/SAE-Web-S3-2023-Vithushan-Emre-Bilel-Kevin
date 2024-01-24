@@ -37,7 +37,7 @@ class ControleurConnexion {
                 break;
             case 'deconnexion':
                 $this->deconnexion();
-                break;           
+                break;
             default :
 			die ("Module inexistant mod connexion");
         }
