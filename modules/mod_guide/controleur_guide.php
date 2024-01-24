@@ -29,9 +29,9 @@ class ControleurGuide
     }
 
     public function affiche_guide(){
-        $this->vue->affiche_guide_fichier();
         $this->vue->affiche_liste_tours();
         $this->vue->affiche_liste_ennemis();
+        $this->vue->affiche_guide_fichier();
     }
 
 }

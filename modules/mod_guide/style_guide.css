@@ -1,29 +1,76 @@
 .divBootGenerale {
+
     margin-bottom : 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
 .divDesc {
-    background-color: red;
+    /*background-color: red;*/
     height: 205px;
+
 }
 
 .dispflex {
     display: flex;
-    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    /*background-color: blue;*/
+
 }
 
 .div2 {
-    background-color: aqua;
+    /*background-color: aqua;*/
     display: inline;
     height: 205px;
-    width: 500px;
+    justify-content: center;
+    /*width: 500px;*/
+    margin-left: 5%;
 
 }
 
 .div3 {
+    /*background-color: yellow;*/
 
-    background-color: yellow;
     display: inline;
     height: 205px;
+    justify-content: center;
+    margin-left: 5%;
 }
+
+.imageList {
+    height: 205px;
+    width: 205px;
+
+}
+
+.titre {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.premiertitre {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.sous-titre {
+    text-align: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 50px;
+}
+
+.boutonguide {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
