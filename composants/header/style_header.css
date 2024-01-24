@@ -6,15 +6,12 @@
    
 }
 
-.titre_header {
-    text-align: center;
-    font-size: 4em;
-    width: 50%;
-    margin-left: 25%;
-    padding: 25px;
-    margin-top: 0;
-    color: white;
+.titre {
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
 }
+
 
 
 #liensContainer {
