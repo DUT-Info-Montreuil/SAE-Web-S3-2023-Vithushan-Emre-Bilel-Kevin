@@ -4,12 +4,14 @@ class VueGuide extends VueGenerique{
     public function __construct () {
         parent::__construct();
 
+        ?>
+              <link rel="stylesheet" href="modules/mod_guide/style_guide.css">
+        <?php
+
     }
 
     public function affiche_liste_tours() {
         ?>
-        
-        <link rel="stylesheet" href="modules/mod_guide/style_guide.css">
         <h1 class="premiertitre">Page guide</h1>
         <p class="sous-titre">Cette page va vous permettre de découvrir comment on va pouvoir défendre notre base et quels types d'ennemis peuvent nous attaquer</p>
         <h3 class="titre">Les différents types de tours</h3>

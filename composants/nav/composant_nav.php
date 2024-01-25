@@ -1,5 +1,5 @@
 <?php
-require_once "cont_nav.php";
+require_once "composants/nav/cont_nav.php";
 
 class ComposantNav extends ComposantGenerique {
 	public function __construct () {

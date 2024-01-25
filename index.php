@@ -5,20 +5,10 @@ require_once "connexion.php";
 require_once "site.php";
 require_once "vue_generique.php";
 require_once "module_generique.php";
-require_once "vue_generique.php";
 require_once "composant_generique.php";
 require_once "vue_composant_generique.php";
-
-require_once "composants/header/cont_header.php";
-require_once "composants/header/vue_header.php";
 require_once "composants/header/composant_header.php";
-
-require_once "composants/nav/cont_nav.php";
-require_once "composants/nav/vue_nav.php";
 require_once "composants/nav/composant_nav.php";
-
-require_once "composants/footer/cont_footer.php";
-require_once "composants/footer/vue_footer.php";
 require_once "composants/footer/composant_footer.php";
 
 

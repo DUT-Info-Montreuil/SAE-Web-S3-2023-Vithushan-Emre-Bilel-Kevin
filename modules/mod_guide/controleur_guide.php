@@ -1,16 +1,13 @@
 <?php
 
-require_once "modules/mod_guide/modele_guide.php";
 require_once "modules/mod_guide/vue_guide.php";
 
 class ControleurGuide
 {
-    private $modele;
     private $vue;
     private $action;
 
     public function __construct() {
-        $this->modele = new ModeleGuide();
         $this->vue = new VueGuide();
     }
 
