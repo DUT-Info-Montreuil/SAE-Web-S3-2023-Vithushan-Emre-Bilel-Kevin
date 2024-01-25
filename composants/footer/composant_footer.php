@@ -1,5 +1,7 @@
 <?php
 
+require_once "composants/footer/cont_footer.php";
+
 class ComposantFooter extends ComposantGenerique {
 	
 	public function __construct () {

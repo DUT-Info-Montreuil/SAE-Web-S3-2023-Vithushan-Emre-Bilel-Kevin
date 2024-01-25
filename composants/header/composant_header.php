@@ -1,5 +1,6 @@
 <?php
-require_once "cont_header.php";
+
+require_once "composants/header/cont_header.php";
 
 
 class ComposantHeader extends ComposantGenerique {

@@ -1,7 +1,5 @@
 <?php
 
-require_once 'connexion.php';
-
 class ModeleClan extends Connexion {
     
     public function rechercherClan(){
