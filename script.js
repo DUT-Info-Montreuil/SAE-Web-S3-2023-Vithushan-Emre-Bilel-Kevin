@@ -1,7 +1,5 @@
 function toggleLiens() {
    event.preventDefault();
-    // Récupérer l'élément div
-   
     var divLiens = document.getElementById('liensContainer');
    // alert(divLiens);
 

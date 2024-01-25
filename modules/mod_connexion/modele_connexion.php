@@ -36,14 +36,15 @@ class ModeleConnexion extends Connexion {
         $result = $query->fetch();
         if ($result !== false) {
             $clogin = $result['login'];
-            $pwhash = $result['motdepasse'];
+            $pwhash = isset($result['motdepasse']) ? $result['motdepasse'] : null;
         } else {
             echo 'Aucun utilisateur trouvé avec ce login.';
         }
-        if ($clogin != NULL){
+        if ($clogin != NULL AND isset($pwhash) AND !empty($pwhash)){
             if (password_verify($cmdp,$pwhash)){
                 $_SESSION['Utilisateur'] = $clogin;
                 echo'<br>vous etes connecter<br>';
+                header("Location: index.php?module=accueil");
                 return password_verify($cmdp,$pwhash);
             }
             else {

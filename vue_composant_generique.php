@@ -5,7 +5,7 @@ class VueCompGenerique {
 	protected $affichage;
 
 	public function __construct() {
-		$this->affichage = "";
+		$this->affichage = '';
 
 	}
 

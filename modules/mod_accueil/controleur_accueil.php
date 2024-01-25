@@ -19,8 +19,8 @@ class ControleurAccueil {
         switch($this->action) {
             case 'accueil':
                 $this->afficherAccueil();
-                break;
-                default :
+                break;  
+            default :
 				die ("Module inexistant");
         }
     }
@@ -28,6 +28,7 @@ class ControleurAccueil {
     public function afficherAccueil() {
         $this->vue->accueil();
     }
+
   
 }
 ?>

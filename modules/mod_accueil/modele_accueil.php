@@ -7,5 +7,5 @@ class ModeleAccueil extends Connexion {
     }
 
 }
-
+       
 ?>

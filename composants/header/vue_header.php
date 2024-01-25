@@ -2,7 +2,9 @@
 class VueCompHeader extends VueCompGenerique {
     
     public function __construct() {
-		$this->affichage .= '   
+		$this->affichage .= 
+    
+    '   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="composants/header/style_header.css">
         <script src=".//script.js"></script>
@@ -21,16 +23,17 @@ class VueCompHeader extends VueCompGenerique {
 
 
         <div id="liensContainer" style="display: none;">';
-        
+        //ob_start ();
         if(isset($_SESSION['Utilisateur'])){
+          //ob_get_clean();
           $this->affichage .= '<a class="lien1" href="index.php?module=connexion&&action=deconnexion">Deconnexion</a>';
           $this->affichage .= '<a class="lien1" href="index.php?module=profil&&action=profil">Profil</a>';                     
         }else {
           $this->affichage .='<a class="lien1" href="index.php?module=connexion&&action=form_connexion">Connection</a>';
           $this->affichage .='<a class="lien2" href="index.php?module=connexion&&action=form_inscription">Inscription</a>';
+          //ob_get_clean();
         }    
           
-
           $this->affichage .= '  
         </div>
    

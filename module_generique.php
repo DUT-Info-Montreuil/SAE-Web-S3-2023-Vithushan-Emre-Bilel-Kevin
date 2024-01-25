@@ -6,8 +6,8 @@ class ModuleGenerique {
 	protected $controleur;
 	
 	public function __construct () {
-		$this->title = "";
-		$this->affichage = "";
+		$this->title = '';
+		$this->affichage = '';
 	}
 	
 	public function exec () {

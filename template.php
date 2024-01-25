@@ -9,9 +9,11 @@
 </head>
 <body>
 <header><?php echo $header->getAffichage(); ?></header>
+
 <nav><?php echo $nav->getAffichage(); ?></nav>
 <main>
 <?=$module_html?>
+
 </main>
 
 <footer><?php echo $footer->getAffichage();?></footer>
