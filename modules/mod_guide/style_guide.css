@@ -7,7 +7,6 @@
 
 
 .divDesc {
-    /*background-color: red;*/
     height: 205px;
 
 }
@@ -16,23 +15,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /*background-color: blue;*/
 
 }
 
 .div2 {
-    /*background-color: aqua;*/
     display: inline;
     height: 205px;
     justify-content: center;
-    /*width: 500px;*/
     margin-left: 5%;
     border: 1px solid #cccccc;
 
 }
 
 .div3 {
-    /*background-color: yellow;*/
 
     display: inline;
     height: 205px;
@@ -80,3 +75,9 @@ p{
 }
 
 
+.titree{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #cccccc;
+}
