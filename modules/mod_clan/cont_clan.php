@@ -17,6 +17,7 @@ class ContClan {
     public function exec() {
         switch($this->action) {
             case 'afficherBarreDeRecherche':
+                $this->modele->aUnClan();
                 $this->afficherBarreDeRecherche();
                 $this->afficheLesClans();
                 $this->afficheMonClan();
@@ -30,17 +31,17 @@ class ContClan {
                  $this->ajouterJoueurAuClan();
             break;
             case 'quitter' : 
-                
+                $this->quitterLeClan();
             break;
         }
     }
 
-    public function rechercherClan(){
-        $this->vue->afficheToutLesClansTrouverDansUnElementScrollable($this->modele->rechercherClan());;        
-    }
-
     public function afficherBarreDeRecherche(){
         $this->vue->afficheBarreDeRecherche();
+    }
+
+    public function rechercherClan(){
+        $this->vue->afficheToutLesClansTrouverDansUnElementScrollable($this->modele->rechercherClan());;        
     }
 
     public function afficheLesClans () {
@@ -48,20 +49,37 @@ class ContClan {
         $this->vue->afficheToutLesClansDansUnElementADefilement($tab);
     }
 
-
-    public function getAffichage(){
-        return $this->vue->getAffichage();
-    }
-
     public function ajouterJoueurAuClan () {
-        $this->modele->ajouterJoueurAUClan();
-        header("Location: index.php?module=clan");
+        if ($this->modele->ajouterJoueurAUClan()) {
+            $this->afficherBarreDeRecherche();
+            $this->vue->confirmAjout();
+            $this->afficheLesClans();
+            $this->afficheMonClan();
+        }
+        else {
+            $this->afficherBarreDeRecherche();
+            $this->vue->aDejaUnClan();
+            $this->afficheLesClans();
+            $this->afficheMonClan();
+        }
     }
 
     public function afficheMonClan() {
         $tab = $this->modele->informationAfficherMonClan();
         $tab2 = $this->modele->infoJoueur();
         $this->vue->afficherMonClanEtListJoueurDansUnElementScrollable($tab, $tab2);
+    }
+
+    public function quitterLeClan() {
+        $this->modele->quitterLeClan();
+        $this->afficherBarreDeRecherche();
+        $this->vue->confirmQuitter();
+        $this->afficheLesClans();
+        $this->afficheMonClan();
+    }
+
+    public function getAffichage(){
+        return $this->vue->getAffichage();
     }
 
 }

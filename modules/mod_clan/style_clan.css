@@ -70,3 +70,7 @@
     display: flex;
     gap: 150px;
 }
+
+.paragraphe {
+    text-align: center;
+}
