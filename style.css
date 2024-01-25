@@ -3,6 +3,7 @@ body {
     height: 100vh;
     background-size: cover;
     background-image: url(images/images_accueil/backgroud.png);
+    color: #cccccc;
 }
 
 header {
