@@ -46,7 +46,7 @@ class ControleurConnexion {
 
     public function ajout() {
         $this->modele->ajouterUtilisateur();
-        echo 'Vous vous étes inscrit avec succés !<br>';
+        $this->vue->connecte();
     }
 
     public function connexion() {
