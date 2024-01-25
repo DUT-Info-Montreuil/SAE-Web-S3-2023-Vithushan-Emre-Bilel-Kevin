@@ -11,6 +11,8 @@ class VueCompNav extends VueCompGenerique {
         <a class="navi" href="index.php?module=">JOUER</a>
         <a class="navi" href="index.php?module=clan">CLAN</a>
         <a class="navi" href="index.php?module=guide">GUIDE</a>
+        <a class="navi" href="index.php?module=ami">AMI</a>
+
  
     ';
 	}

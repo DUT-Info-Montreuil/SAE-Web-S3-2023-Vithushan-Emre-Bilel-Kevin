@@ -17,6 +17,7 @@ class Site {
 			case "connexion" :
             case "support" :
 			case "profil" :
+			case "ami":	
 				require_once "modules/mod_".$this->module_name."/module_".$this->module_name.".php";
 				break;
 			default :
