@@ -16,7 +16,7 @@ class VueProfil extends VueGenerique{
         echo 'Vous etes niveau'.$t;
     }
 
-    public function test($t){
+    public function test($t , $clan){
        
         ?>
          <div class="container light-style flex-grow-1 container-p-y profil">
@@ -31,6 +31,8 @@ class VueProfil extends VueGenerique{
                             href="#account-general">General</a>
                         <a class="list-group-item list-group-item-action" data-toggle="list"
                             href="#account-change-password">Change password</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-change-mail">Change mail</a>    
                         <a class="list-group-item list-group-item-action" data-toggle="list"
                             href="#account-info">Info</a>
                     </div>
@@ -76,36 +78,39 @@ class VueProfil extends VueGenerique{
                             </div>        
                             
                         </div>
+                        <div class="tab-pane fade" id="account-change-mail">
+                            
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <?php
+                                        echo '<form method="post" action="index.php?module=profil&&action=changeMail">';
+                                        echo 'Votre Mot de passe <br>';
+                                        echo '<input type="password" name="motDePasse"><br>';
+                                        echo 'Changer votre mail <br>';
+                                        echo '<input type="text" name="newMail"><br>';
+                                        echo 'Resaisissez le nouveau mail <br>';
+                                        echo '<input type="text" name="newMail2"><br>';
+                                        echo '<input type="submit" value="Valider">';
+                                        echo '</form>';
+                                    ?>
+                                </div>
+                            </div>        
+                            
+                        </div>
+
                         <div class="tab-pane fade" id="account-info">
-                            <div class="card-body pb-2">
                                 <div class="form-group">
-                                    <label class="form-label">Bio</label>
-                                    <textarea class="form-control"
-                                        rows="5"><?= $t['commentaire'] ?></textarea>
+                                    <label class="form-label">Votre niveau :</label>
+                                    <input type="text" class="form-control mb-1" value="<?= $t['niveau']; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label">Birthday</label>
-                                    <input type="text" class="form-control" value="May 3, 1995">
+                                    <label class="form-label">Votre clan :</label>
+                                    <input type="text" class="form-control mb-1" value="<?= $c = isset($clan['nom']) ? $clan['nom'] : 'vous avez pas de clan'; ?>">
                                 </div>
-                                <div class="form-group">
-                                    <label class="form-label">Country</label>
-                                    <select class="custom-select">
-                                        <option>USA</option>
-                                        <option selected>Canada</option>
-                                        <option>UK</option>
-                                        <option>Germany</option>
-                                        <option>France</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <hr class="border-light m-0">
-                            <div class="card-body pb-2">
-                                <h6 class="mb-4">Contacts</h6>
-                                <div class="form-group">
-                                    <label class="form-label">Phone</label>
-                                    <input type="text" class="form-control" value="+0 (123) 456 7891">
-                                </div>
-                            </div>
+
+                        
+                            
+                            
                         </div>
                     </div>
                 </div>

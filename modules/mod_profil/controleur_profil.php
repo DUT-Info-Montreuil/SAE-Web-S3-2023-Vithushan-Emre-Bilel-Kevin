@@ -29,6 +29,9 @@ class ControleurProfil {
             case 'changeMDP':
                 $this->changerLeMdp();
                 break;
+            case 'changeMail':
+                $this->changerLeMail();
+                break;    
             default :
 			die ("Module inexistant mod connexion");
         }
@@ -36,7 +39,7 @@ class ControleurProfil {
 
     public function profil(){
         $this->vue->profil($this->modele->afficherNiveau());
-        $this->vue->test($this->modele->infoJoueur());
+        $this->vue->test($this->modele->infoJoueur(), $this->modele->recupereIdClan());
     }
 
     public function changerLeMdp(){
@@ -46,6 +49,11 @@ class ControleurProfil {
 
     public function getAffichage(){
         return $this->vue->getAffichage();
+    }
+
+    public function changerLeMail(){
+        $this->modele->changerLeMail();
+        $this->profil();
     }
 
 }
