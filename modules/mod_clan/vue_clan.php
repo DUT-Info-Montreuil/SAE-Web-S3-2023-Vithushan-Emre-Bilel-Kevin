@@ -1,5 +1,5 @@
 <?php
-require_once('vue_generique.php');
+
 class VueClan extends VueGenerique{
 
     public function __construct () {
