@@ -8,7 +8,7 @@ class VueCompNav extends VueCompGenerique {
       
         <a class="navi" href="index.php?module=classement">CLASSEMENT</a>
         <a class="navi" href="index.php?module=support">SUPPORT</a>
-        <a class="navi" href="index.php?module=">JOUER</a>
+        <a class="navi" href="SpaceTowerDefense.zip" download="SpaceTowerDefense.zip">JOUER</a>
         <a class="navi" href="index.php?module=clan">CLAN</a>
         <a class="navi" href="index.php?module=guide">GUIDE</a>
  
