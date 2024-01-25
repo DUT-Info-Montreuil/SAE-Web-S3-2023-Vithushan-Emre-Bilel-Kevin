@@ -113,7 +113,7 @@ class VueGuide extends VueGenerique{
 
         <h3 class="titre">Guide du jeu</h3>
         <p class="sous-titre">Voici un guide plus avancé vous permettant de découvrir le jeu avec des détails sur les différentes tours, les ennemis et le gameplay dans toute sa grandeur :</p>
-        <div class="boutonguide"><a class="btn btn-dark" href="SpaceTowerDefense.pdf" download="SpaceTowerDefense_Guide.pdf"> Téléchargez le guide ici </a></div>
+        <div class="boutonguide"><a class="btn btn-dark" href="SpaceTowerDefenseGuide.pdf" download="SpaceTowerDefense_Guide.pdf"> Téléchargez le guide ici </a></div>
         
 
         <?php
