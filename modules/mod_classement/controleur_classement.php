@@ -18,7 +18,10 @@ class ControleurClassement {
 
         switch($this->action) {
             case 'accueil':
+                $this->Titre();
                 $this->tableClassementScore();
+                $this->tableClassementKill();
+                $this->tableClassementClanScore();
                 break;
                 default :
 				die ("Module inexistant");
@@ -30,9 +33,18 @@ class ControleurClassement {
     public function tableClassementScore() {
         $this->vue->afficheTableScore($this->modele->listeJoueursScore());
     }
-  
-    
 
+    public function tableClassementKill() {
+        $this->vue->afficheTableKill($this->modele->listeJoueursKill());
+    }
+  
+    public function tableClassementClanScore() {
+        $this->vue->afficheTableClanScore($this->modele->listeClanScore());
+    }
+
+    public function Titre() {
+        $this->vue->afficherTitre();
+    }
 
 }
 ?>
