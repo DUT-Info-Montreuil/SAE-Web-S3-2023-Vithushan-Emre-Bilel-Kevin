@@ -38,10 +38,7 @@ class ControleurConnexion {
             case 'deconnexion':
                 $this->deconnexion();
                 header("Location: index.php?module=accueil");
-                break;
-            case 'connexion2':
-                echo 'dans connexion2';
-                break;    
+                break;  
             default :
 			die ("Module inexistant mod connexion");
         }
