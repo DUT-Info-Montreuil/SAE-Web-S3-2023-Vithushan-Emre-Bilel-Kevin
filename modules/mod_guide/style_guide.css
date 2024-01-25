@@ -27,6 +27,7 @@
     justify-content: center;
     /*width: 500px;*/
     margin-left: 5%;
+    border: 1px solid #cccccc;
 
 }
 
@@ -37,6 +38,7 @@
     height: 205px;
     justify-content: center;
     margin-left: 5%;
+    border: 1px solid #cccccc;
 }
 
 .imageList {
@@ -49,28 +51,32 @@
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    justify-content: center;
+    color: #cccccc;
 }
 
 .premiertitre {
     margin-top: 100px;
     margin-bottom: 50px;
     text-align: center;
-    justify-content: center;
+    color: #cccccc;
 }
 
 .sous-titre {
     text-align: center;
-    justify-content: center;
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 50px;
+    color: #cccccc;
 }
 
 .boutonguide {
     text-align: center;
-    justify-content: center;
     margin-bottom: 50px;
+    color: #cccccc;
+}
+
+p{
+    color: #cccccc;
 }
 
 

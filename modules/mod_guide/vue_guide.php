@@ -17,33 +17,33 @@ class VueGuide extends VueGenerique{
         <div class="row">
             <div class="col-2">
                 <div class="list-group"  id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-simple-list" data-bs-toggle="list" href="#list-simple" role="tab" aria-controls="list-simple">Tour Simple</a>
-                    <a class="list-group-item list-group-item-action" id="list-rapide-list" data-bs-toggle="list" href="#list-rapide" role="tab" aria-controls="list-rapide">Tour Tirs-Rapides</a>
-                    <a class="list-group-item list-group-item-action" id="list-missile-list" data-bs-toggle="list" href="#list-missile" role="tab" aria-controls="list-missile">Tour Missile</a>
-                    <a class="list-group-item list-group-item-action" id="list-laser-list" data-bs-toggle="list" href="#list-laser" role="tab" aria-controls="list-laser">Tour Laser</a>
-                    <a class="list-group-item list-group-item-action" id="list-bombe-list" data-bs-toggle="list" href="#list-bombe" role="tab" aria-controls="list-bombe">Tour Bombe</a>
+                    <a class="list-group-item list-group-item-action active list-group-item-dark" id="list-simple-list" data-bs-toggle="list" href="#list-simple" role="tab" aria-controls="list-simple">Tour Simple</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-rapide-list" data-bs-toggle="list" href="#list-rapide" role="tab" aria-controls="list-rapide">Tour Tirs-Rapides</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-missile-list" data-bs-toggle="list" href="#list-missile" role="tab" aria-controls="list-missile">Tour Missile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-laser-list" data-bs-toggle="list" href="#list-laser" role="tab" aria-controls="list-laser">Tour Laser</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-bombe-list" data-bs-toggle="list" href="#list-bombe" role="tab" aria-controls="list-bombe">Tour Bombe</a>
                 </div>
             </div>
             <div class="col-8">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active divDesc" id="list-simple" role="tabpanel" aria-labelledby="list-simple-list"><div class="dispflex"><div class="div2"><img class="imageList" src="images/images_guide/mitraillette-sur-pied.jpg" /></div><div class="div3"><p>C'est juste une tour simple</p></div></div></div>
+                    <div class="tab-pane fade show active divDesc" id="list-simple" role="tabpanel" aria-labelledby="list-simple-list"><div class="dispflex"><div class="div2"><img class="imageList" src="images/images_guide/tour-simple.png" /></div><div class="div3"><p>Le dernier bijou de la technologie militaire, est prête à changer la donne sur le champ de bataille. Conçue pour la domination totale, cette tourelle de combat révolutionnaire est l'atout ultime pour les stratèges les plus astucieux et les guerriers les plus audacieux. De plus, cette tour à pour avantage de couter moins chère que les autres, ce qui peut servir quand on a presque plus de budjet mais qu'on a besoin de défendre un coté de notre base !</p></div></div></div>
                     <div class="tab-pane fade divDesc" id="list-rapide" role="tabpanel" aria-labelledby="list-rapide-list"><div class="dispflex"> <div class="div2"><img class="imageList" src="images/images_guide/tour-rapide.png" /></div><div class="div3"><p>Cette tour révolutionnaire a pour spécialité le tir rapide, vous permettant de déchaîner une salve incessante de projectiles sur vos adversaires.</p></div></div></div>
-                    <div class="tab-pane fade divDesc" id="list-missile" role="tabpanel" aria-labelledby="list-missile-list"><div class="dispflex"> <div class="div2"><img class="imageList" src="images/images_guide/mitraillette-sur-pied.jpg" /></div><div class="div3"><p>Cette tour exceptionnelle tire des missiles, transformant chaque bataille en un spectacle pyrotechnique impressionnant. Grâce à sa spécialité unique, la Tour Missile offre une portée étendue, une précision redoutable et une capacité à infliger des dégâts massifs à vos adversaires.</p></div></div></div>
-                    <div class="tab-pane fade divDesc" id="list-laser" role="tabpanel" aria-labelledby="list-laser-list"><div class="dispflex"> <div class="div2"><img class="imageList" src="images/images_guide/mitraillette-sur-pied.jpg" /></div><div class="div3"><p>Cette tour avant-gardiste est spécialement conçue pour libérer un faisceau de lasers continu, offrant une dévastation instantanée à vos ennemis. Sa spécialité réside dans la précision inégalée et la constance de ses tirs, transformant chaque bataille en un ballet lumineux hypnotique.</p></div></div></div>
-                    <div class="tab-pane fade divDesc" id="list-bombe" role="tabpanel" aria-labelledby="list-bombe-list"><div class="dispflex"> <div class="div2"><img class="imageList" src="images/images_guide/mitraillette-sur-pied.jpg" /></div><div class="div3"><p>Spécialisée dans les dégâts de zone, cette tour vous permet de semer le chaos parmi vos adversaires en déclenchant des explosions stratégiques. Chaque tir de la Tour Bombe crée une zone d'impact dévastatrice, neutralisant habilement les ennemis regroupés.</p></div></div></div>
+                    <div class="tab-pane fade divDesc" id="list-missile" role="tabpanel" aria-labelledby="list-missile-list"><div class="dispflex"> <div class="div2"><img class="imageList" src="images/images_guide/tour-missile.png" /></div><div class="div3"><p>Cette tour exceptionnelle tire des missiles, transformant chaque bataille en un spectacle pyrotechnique impressionnant. Grâce à sa spécialité unique, la Tour Missile offre une portée étendue, une précision redoutable et une capacité à infliger des dégâts massifs à vos adversaires.</p></div></div></div>
+                    <div class="tab-pane fade divDesc" id="list-laser" role="tabpanel" aria-labelledby="list-laser-list"><div class="dispflex"> <div class="div2"><img class="imageList" src="images/images_guide/tour-laser.png" /></div><div class="div3"><p>Cette tour avant-gardiste est spécialement conçue pour libérer un faisceau de lasers continu, offrant une dévastation instantanée à vos ennemis. Sa spécialité réside dans la précision inégalée et la constance de ses tirs, transformant chaque bataille en un ballet lumineux hypnotique.</p></div></div></div>
+                    <div class="tab-pane fade divDesc" id="list-bombe" role="tabpanel" aria-labelledby="list-bombe-list"><div class="dispflex"> <div class="div2"><img class="imageList" src="images/images_guide/tour-bombe.png" /></div><div class="div3"><p>Spécialisée dans les dégâts de zone, cette tour vous permet de semer le chaos parmi vos adversaires en déclenchant des explosions stratégiques. Chaque tir de la Tour Bombe crée une zone d'impact dévastatrice, neutralisant habilement les ennemis regroupés.</p></div></div></div>
                 </div>
             </div>
         </div>
         </div>
-        <h4 class="titre">Les tours Spéciales </h4>
+        <h4 class="titre">Les tours spéciales </h4>
         <p class="sous-titre">Ce sont des tours qui se démarquent des tours normales grâce au fait qu'elles peuvent laisser des "effets" qui durent plusieurs tours sur leurs cibles. Mais attention ! Ces tours ne peuvent pas attaquer les ennemis trop proche d'elles et ces tours ne peuvent cibler que certains types d'ennemis en particulier</p><br>
         <div class="divBootGenerale">
         <div class="row">
             <div class="col-2">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-feu-list" data-bs-toggle="list" href="#list-feu" role="tab" aria-controls="list-feu">Tour de Feu</a>
-                    <a class="list-group-item list-group-item-action" id="list-gel-list" data-bs-toggle="list" href="#list-gel" role="tab" aria-controls="list-gel">Tour de Gel</a>
-                    <a class="list-group-item list-group-item-action" id="list-poison-list" data-bs-toggle="list" href="#list-poison" role="tab" aria-controls="list-poison">Tour de Poison</a>
+                    <a class="list-group-item list-group-item-action active list-group-item-dark" id="list-feu-list" data-bs-toggle="list" href="#list-feu" role="tab" aria-controls="list-feu">Tour de Feu</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-gel-list" data-bs-toggle="list" href="#list-gel" role="tab" aria-controls="list-gel">Tour de Gel</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-poison-list" data-bs-toggle="list" href="#list-poison" role="tab" aria-controls="list-poison">Tour de Poison</a>
                 </div>
             </div>
             <div class="col-8">
@@ -69,8 +69,8 @@ class VueGuide extends VueGenerique{
         <div class="row">
             <div class="col-2">
                 <div class="list-group"  id="list-tab2" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-alien-list" data-bs-toggle="list" href="#list-alien" role="tab" aria-controls="list-alien">Soldat Zentari</a>
-                    <a class="list-group-item list-group-item-action" id="list-general-list" data-bs-toggle="list" href="#list-general" role="tab" aria-controls="list-general">Général Zentari</a>
+                    <a class="list-group-item list-group-item-action active list-group-item-dark" id="list-alien-list" data-bs-toggle="list" href="#list-alien" role="tab" aria-controls="list-alien">Soldat Zentari</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-general-list" data-bs-toggle="list" href="#list-general" role="tab" aria-controls="list-general">Général Zentari</a>
                 </div>
             </div>
             <div class="col-8">
@@ -87,9 +87,9 @@ class VueGuide extends VueGenerique{
         <div class="row">
             <div class="col-2">
                 <div class="list-group" id="list-tab2" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-vsimple-list" data-bs-toggle="list" href="#list-vsimple" role="tab" aria-controls="list-vsimple">Vaisseau Simple</a>
-                    <a class="list-group-item list-group-item-action" id="list-vrapide-list" data-bs-toggle="list" href="#list-vrapide" role="tab" aria-controls="list-vrapide">Vaisseau Rapide</a>
-                    <a class="list-group-item list-group-item-action" id="list-vtank-list" data-bs-toggle="list" href="#list-vtank" role="tab" aria-controls="list-vtank">Vaisseau Tank</a>
+                    <a class="list-group-item list-group-item-action active list-group-item-dark" id="list-vsimple-list" data-bs-toggle="list" href="#list-vsimple" role="tab" aria-controls="list-vsimple">Vaisseau Simple</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-vrapide-list" data-bs-toggle="list" href="#list-vrapide" role="tab" aria-controls="list-vrapide">Vaisseau Rapide</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark" id="list-vtank-list" data-bs-toggle="list" href="#list-vtank" role="tab" aria-controls="list-vtank">Vaisseau Tank</a>
                 </div>
             </div>
             <div class="col-8">
@@ -112,7 +112,7 @@ class VueGuide extends VueGenerique{
 
         <h3 class="titre">Guide du jeu</h3>
         <p class="sous-titre">Voici un guide plus avancé vous permettant de découvrir le jeu avec des détails sur les différentes tours, les ennemis et le gameplay dans toute sa grandeur :</p>
-        <div class="boutonguide"><a class="btn btn-primary" href="https://localhost/SaeDevWebS3/SpaceTowerDefense.pdf" download="SpaceTowerDefense_Guide.pdf"> Téléchargez le guide ici </a></div>
+        <div class="boutonguide"><a class="btn btn-dark" href="SpaceTowerDefense.pdf" download="SpaceTowerDefense_Guide.pdf"> Téléchargez le guide ici </a></div>
         
 
         <?php

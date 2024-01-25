@@ -2,12 +2,14 @@
 body {
     height: 100vh;
     background-size: cover;
+    background-image: url(images/fond.png);
+    background-position: bottom;
 }
 
 header {
     background-image: url(images/images_header/space.png);
     background-size: cover;
-    background-position: end;
+    background-position: bottom;
     background-repeat: no-repeat;
     width: 95%;
     height: 45%;
