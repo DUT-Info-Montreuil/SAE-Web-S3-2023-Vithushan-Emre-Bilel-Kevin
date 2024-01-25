@@ -6,7 +6,6 @@ class Connexion {
     public static function init_connexion() {
         self::$bdd = new PDO('mysql:host=localhost;dbname=kevin', 'root', '');
 
-
     }
 }
 

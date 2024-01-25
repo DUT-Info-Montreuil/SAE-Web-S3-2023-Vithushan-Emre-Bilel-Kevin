@@ -37,7 +37,8 @@ class ControleurConnexion {
                 break;
             case 'deconnexion':
                 $this->deconnexion();
-                break;           
+                header("Location: index.php?module=accueil");
+                break;  
             default :
 			die ("Module inexistant mod connexion");
         }
@@ -50,7 +51,6 @@ class ControleurConnexion {
 
     public function connexion() {
         $this->modele->connexion_utilisateur();
-        
     }
 
     public function formulaire_connexion() {

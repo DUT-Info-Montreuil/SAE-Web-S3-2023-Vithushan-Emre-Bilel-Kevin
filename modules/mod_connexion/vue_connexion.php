@@ -31,6 +31,7 @@ class VueConnexion extends VueGenerique{
         echo '</form>';
     }
 
+
     public function getVue(){
         return $this;
     }

@@ -3,95 +3,52 @@
 
 
 
+.carousel1,.carousel{
+    width: 90%; 
+    margin-left: 5%;
+}
+
+.videojeu{
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.videoJeuSize{ 
+    border: 1px solid #ccc; /* Ajoutez votre style ici */
+     width: 560;
+     height: 315;
+}
+
 
 
 .avis{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    background-image: url(images/images_accueil/cadreor.png);
+    font-size: large;
+    font-family: Cambria, serif;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
 
-    text-align: center;
+.presentationjeu{
+    margin-top: 25px;
+    border-style: groove;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-top-width: 8px;
+    border-color: rgb(231, 231, 228);
+    color: white;
+    font-family: OCR A Std, monospace;
+    height: 50%;
+    font-size: 100%;
+    overflow: scroll;
+    margin-bottom: 10%;
+}
+
+h3{ 
+    color: white;
 }
 
 
 
-
-
-.imageJeu{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 55px ;
-}
-
-
-
-
-
-.videoJeu{
-    text-align: center;
-}
-
-.presentationJeu{
-    display: flex;
-    align-items: center;
-    height: 150px;
-    background-color: red;
-    justify-content: center;
-}
-
-.descriptionJeu{
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-
-}
-
-.histoire{
-   
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
-
-@media (max-width:430px){
-    
-    .imageJeu{
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .imageJeu1Size{
-        width: 412px;
-        height: 250px;
-    }
-
-    .imageJeu2Size{
-        width: 412px;
-        height: 250px;
-    }
-
-    .videoJeuSize{
-        width: 412px;
-        height: 300px;
-    }
-
-    .descriptionJeu{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imageDescriptionJeuSize{
-        width: 412px;
-        height: 250px;
-    }
-}
