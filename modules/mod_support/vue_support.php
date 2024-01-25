@@ -40,7 +40,7 @@ class VueSupport extends VueGenerique{
 	}
 
 	public function barreDeRecherche(){
-		echo '<form method="post" action="index.php?module=support&&action=rechercherQuestion">';
+		echo '<form class="barrederecherche" method="post" action="index.php?module=support&&action=rechercherQuestion">';
         echo '<input type="search"  name="recherche" placeholder="rechercher une question">';
         echo '<input type="submit" name="envoyer">';
         echo '</form>';
@@ -61,9 +61,9 @@ class VueSupport extends VueGenerique{
 	
     public function contact () {
 		?>
-        <h1> Contactez-Nous</h1>
-		<p>Disponibles de 9h a 18h du lundi au vendredi</p>	
-		<div class="row">
+        <h1 class="titrecontacternous"> Contactez-Nous</h1>
+		<p class="soustitre">Disponibles de 9h a 18h du lundi au vendredi</p>	
+		<div class="row num">
       		<div class="col">
 				<img src="images/images_support/tel.png" alt="logo-tel" width="50">
 				<br>
@@ -71,7 +71,7 @@ class VueSupport extends VueGenerique{
 				<br>
 				Au 00 00 00 00 00 .
 			</div>
-      		<div class="col">
+      		<div class="col mail">
 				<img src="images/images_support/lettre.png" alt="logo-lettre" width="50">
 				<br>
 				Par Mail

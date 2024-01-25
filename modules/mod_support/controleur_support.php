@@ -16,6 +16,7 @@ class ControleurSupport {
 		
 		switch ($this->action) {
 			case "barreDeRecherche":
+				$this->TitreFaq();
 				$this->barreDeRecherche();
 				$this->test(); 
 				$this->contacter();
@@ -32,7 +33,6 @@ class ControleurSupport {
 	}
 	
 	private function test () {
-		$this->vue->afficheTitreFaq();
         $tab_faq = $this->modele->get_faq();
 		$this->vue->afficheTouteLesQuestionReponseDansUnElementABarreDeDefilement($tab_faq);
 	}
@@ -46,6 +46,9 @@ class ControleurSupport {
 		//$this->modele->rechercherQuestion();
 	}
 
+	private function TitreFaq(){
+		$this->vue->afficheTitreFaq();
+	}
 
 
 	private function contacter () {

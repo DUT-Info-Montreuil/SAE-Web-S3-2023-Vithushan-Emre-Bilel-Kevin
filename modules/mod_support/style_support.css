@@ -1,6 +1,7 @@
 .titre_support {
-   margin-top: 100px;
+   margin-top: 10px;
    text-align: center;
+   color: white;
 }
 
 .element_defilement {
@@ -9,4 +10,36 @@
    overflow: scroll;
    border: 1px solid #ccc;
    margin-left: 25%;
+   color: white;
+
+}
+
+.num{
+   border: 1px solid #ccc;
+   text-align: center;
+   color: white;
+
+}
+.mail{
+   border: 1px solid #ccc;
+   text-align: center;
+   color: white;
+
+}
+
+
+.titrecontacternous{
+   margin-top: 10%;
+   color: white;
+   text-align: center;
+
+}
+
+.soustitre{
+   color: white;
+   text-align: center;
+}
+
+.barrederecherche{
+  margin-left: 40%;
 }
