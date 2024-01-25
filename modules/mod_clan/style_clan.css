@@ -1,0 +1,72 @@
+.form-recherche-clan {
+    margin-top: 100px;
+    margin-left: 40%;
+}
+
+.element_scrollable {
+    height: 500px;
+    width: 40%;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    margin-left: 30%;
+    padding: 10px;
+    margin-bottom: 50px;
+ }
+
+.clan {
+    display: flex;
+    justify-content: space-between;
+    background-color: adb5bd;
+    margin-bottom: 15px;
+}
+
+.clan:hover {
+    background-color: 6c757d;
+}
+
+
+.clan_infoClan {
+    display: flex;
+    gap: 20px;
+}
+
+.monClan {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.monClan_infoClan {
+    display: flex;
+    gap: 150px;
+}
+
+.monClan_elementScrollable {
+    height: 500px;
+    width: 40%;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    margin-left: 30%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.titre2_pageClan {
+    text-align: center;
+}
+
+.joueur {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    background-color: adb5bd;
+}
+
+.joueur:hover {
+    background-color: 6c757d;
+}
+
+.joueur_info {
+    display: flex;
+    gap: 150px;
+}
