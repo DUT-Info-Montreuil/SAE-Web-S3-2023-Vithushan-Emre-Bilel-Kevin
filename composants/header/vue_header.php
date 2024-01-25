@@ -13,6 +13,16 @@ class VueCompHeader extends VueCompGenerique {
           <a href="index.php?module=accueil">
             <img src="images/images_header/home.png" alt="logo-home" width="35">
           </a>
+          <div id="liensContainer" style="display: none;">';
+        if(isset($_SESSION['Utilisateur'])){
+          $this->affichage .= '<a class="lien1" href="index.php?module=connexion&&action=deconnexion">Deconnexion</a>';
+          $this->affichage .= '<a class="lien1" href="index.php?module=profil&&action=profil">Profil</a>';                     
+        }else {
+          $this->affichage .='<a class="lien1" href="index.php?module=connexion&&action=form_connexion">Connection</a>';
+          $this->affichage .='<a class="lien2" href="index.php?module=connexion&&action=form_inscription">Inscription</a>';
+        }    
+          $this->affichage .= '  
+        </div>
           <a href="">
             <img src="images/images_header/user.png" alt="Connexion" width="35"  onclick="toggleLiens()">
           </a>
@@ -22,17 +32,7 @@ class VueCompHeader extends VueCompGenerique {
         </div>
 
 
-        <div id="liensContainer" style="display: none;">';
-        if(isset($_SESSION['Utilisateur'])){
-          $this->affichage .= '<a class="lien1" href="index.php?module=connexion&&action=deconnexion">Deconnexion</a>';
-          $this->affichage .= '<a class="lien1" href="index.php?module=profil&&action=profil">Profil</a>';                     
-        }else {
-          $this->affichage .='<a class="lien1" href="index.php?module=connexion&&action=form_connexion">Connection</a>';
-          $this->affichage .='<a class="lien2" href="index.php?module=connexion&&action=form_inscription">Inscription</a>';
-        }    
-          
-          $this->affichage .= '  
-        </div>
+       
    
     ';
             
