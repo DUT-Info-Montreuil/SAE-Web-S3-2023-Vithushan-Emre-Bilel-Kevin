@@ -23,15 +23,12 @@ class VueCompHeader extends VueCompGenerique {
 
 
         <div id="liensContainer" style="display: none;">';
-        //ob_start ();
         if(isset($_SESSION['Utilisateur'])){
-          //ob_get_clean();
           $this->affichage .= '<a class="lien1" href="index.php?module=connexion&&action=deconnexion">Deconnexion</a>';
           $this->affichage .= '<a class="lien1" href="index.php?module=profil&&action=profil">Profil</a>';                     
         }else {
           $this->affichage .='<a class="lien1" href="index.php?module=connexion&&action=form_connexion">Connection</a>';
           $this->affichage .='<a class="lien2" href="index.php?module=connexion&&action=form_inscription">Inscription</a>';
-          //ob_get_clean();
         }    
           
           $this->affichage .= '  
