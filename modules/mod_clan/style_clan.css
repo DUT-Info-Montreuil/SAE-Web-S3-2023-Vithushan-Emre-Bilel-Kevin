@@ -18,6 +18,11 @@
     justify-content: space-between;
     background-color: adb5bd;
     margin-bottom: 15px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+
 }
 
 .clan:hover {
@@ -34,11 +39,15 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    color: white;
+    margin-bottom: 10px;
+
 }
 
 .monClan_infoClan {
     display: flex;
     gap: 150px;
+    
 }
 
 .monClan_elementScrollable {
@@ -53,6 +62,7 @@
 
 .titre2_pageClan {
     text-align: center;
+    color: white;
 }
 
 .joueur {
@@ -60,6 +70,7 @@
     margin-bottom: 15px;
     justify-content: space-around;
     background-color: adb5bd;
+
 }
 
 .joueur:hover {
@@ -73,4 +84,11 @@
 
 .paragraphe {
     text-align: center;
+    color: white;
+}
+
+.titrevotreclan{
+    color: white;
+    text-align: center;
+
 }

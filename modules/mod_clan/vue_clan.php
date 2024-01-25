@@ -5,6 +5,7 @@ class VueClan extends VueGenerique{
     public function __construct () {
 		parent::__construct();
 		?>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link rel="stylesheet" href="modules/mod_clan/style_clan.css">
 		<?php
 	}
@@ -29,7 +30,7 @@ class VueClan extends VueGenerique{
                 <p><?php echo $nbJoueur?>/50</p>
                 <p><?php echo $score?> pts</p>
                 <?php if(isset($_SESSION['Utilisateur'])) { ?>
-                <a href="index.php?module=clan&&action=ajouterJoueurAuClan&&clan=<?php echo $idClan?>">Rejoindre</a>
+                <a class="btn btn-success" href="index.php?module=clan&&action=ajouterJoueurAuClan&&clan=<?php echo $idClan?>">Rejoindre</a>
                 <?php } ?>
             </div>
         </div>
@@ -83,7 +84,7 @@ class VueClan extends VueGenerique{
                 </div>
                 <div class='monClan_infoClan'>
                     <p>pts <?php echo $tab['totalArgent'] ?></p>
-                    <a href="index.php?module=clan&&action=quitter&&idClan=<?php echo $tab['idClan'] ?>">quitter</a>
+                    <a class="btn btn-danger" href="index.php?module=clan&&action=quitter&&idClan=<?php echo $tab['idClan'] ?>">QUITTER</a>
                 </div>
             </div>
         <?php }
@@ -143,6 +144,12 @@ class VueClan extends VueGenerique{
         <?php
     }
 
+
+    public function afficheTitreClan() {
+        ?>
+            <h1 class="titrevotreclan"> Votre CLan :</h1>
+        <?php
+    }
 
     public function getVue(){
         return $this;

@@ -20,11 +20,14 @@ class ContClan {
                 $this->modele->aUnClan();
                 $this->afficherBarreDeRecherche();
                 $this->afficheLesClans();
+                $this->afficheTitreVotreClan();
                 $this->afficheMonClan();
             break;        
             case 'rechercherClan':
                 $this->afficherBarreDeRecherche();
                 $this->rechercherClan();
+                $this->afficheTitreVotreClan();
+
                 $this->afficheMonClan();
             break;
             case 'ajouterJoueurAuClan':
@@ -80,6 +83,10 @@ class ContClan {
 
     public function getAffichage(){
         return $this->vue->getAffichage();
+    }
+
+    public function afficheTitreVotreClan(){
+        return $this->vue->afficheTitreClan();
     }
 
 }
